@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Game View-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="GameView" sceneMemberID="viewController">
+                    <view key="view" tag="1000" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4Inch_Background.png" id="i6N-xu-pcX" userLabel="Image View - Background">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Floor.png" id="wbJ-OI-vtB" userLabel="Image View - Floor">
+                                <rect key="frame" x="0.0" y="448" width="320" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UI_Taptostart.png" id="t7s-PO-gbN" userLabel="Image View - Breif UI">
+                                <rect key="frame" x="0.0" y="66" width="320" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UI_Best.png" id="mLS-gl-b97" userLabel="Image View - Best">
+                                <rect key="frame" x="257" y="42" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kVt-LP-WgZ" userLabel="Label - Score">
+                                <rect key="frame" x="167" y="0.0" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vqu-ND-Lu8" userLabel="Label - Game Timer">
+                                <rect key="frame" x="49" y="9" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pk7-my-sej" userLabel="Button - Leaderboard">
+                                <rect key="frame" x="90" y="248" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Button_GC.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Button_GC_Pressed.png"/>
+                                <connections>
+                                    <action selector="ShowGameCenterButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2dT-mg-gWo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qop-B4-vcO" userLabel="Button - Rate">
+                                <rect key="frame" x="90" y="313" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Button_Rate.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Button_Rate_Pressed.png"/>
+                                <connections>
+                                    <action selector="ButtonRate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EVJ-BU-FjF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bmm-OB-tap" userLabel="Button - Facebook">
+                                <rect key="frame" x="100" y="464" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Button_Facebook.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Button_Facebook_Pressed.png"/>
+                                <connections>
+                                    <action selector="PostToFb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OzN-pS-pG7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tp6-71-e2x" userLabel="Button - Twitter">
+                                <rect key="frame" x="168" y="464" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Button_Twitter.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Button_Twitter_Pressed.png"/>
+                                <connections>
+                                    <action selector="PostToTwitter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IaJ-6T-ZS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z7D-32-pYC" userLabel="Button - Pause Music">
+                                <rect key="frame" x="6" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Button_Music_1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayerPause:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Wx-9z-x1q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ba0-XB-ifQ" userLabel="Image View - Flash">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="BestImg" destination="mLS-gl-b97" id="iJJ-T3-aLC"/>
+                        <outlet property="Brief" destination="t7s-PO-gbN" id="WKp-td-aQ1"/>
+                        <outlet property="FacebookButton" destination="bmm-OB-tap" id="NKm-2V-GuB"/>
+                        <outlet property="Flash" destination="Ba0-XB-ifQ" id="DJ6-6n-fHL"/>
+                        <outlet property="Floor" destination="wbJ-OI-vtB" id="VgV-5J-AdG"/>
+                        <outlet property="GameCenterButton" destination="Pk7-my-sej" id="G2F-aO-d5r"/>
+                        <outlet property="GameTimerLabel" destination="Vqu-ND-Lu8" id="WSq-qI-d1Y"/>
+                        <outlet property="MusicButton" destination="Z7D-32-pYC" id="0J8-yL-XAG"/>
+                        <outlet property="RateButton" destination="Qop-B4-vcO" id="Qk2-0F-GG5"/>
+                        <outlet property="ScoreLabel" destination="kVt-LP-WgZ" id="zyg-kF-E17"/>
+                        <outlet property="TwitterButton" destination="Tp6-71-e2x" id="dJp-A1-Cqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4Inch_Background.png" width="320" height="568"/>
+        <image name="Button_Facebook.png" width="150" height="150"/>
+        <image name="Button_Facebook_Pressed.png" width="150" height="150"/>
+        <image name="Button_GC.png" width="280" height="100"/>
+        <image name="Button_GC_Pressed.png" width="280" height="100"/>
+        <image name="Button_Music_1.png" width="150" height="150"/>
+        <image name="Button_Rate.png" width="280" height="100"/>
+        <image name="Button_Rate_Pressed.png" width="280" height="100"/>
+        <image name="Button_Twitter.png" width="150" height="150"/>
+        <image name="Button_Twitter_Pressed.png" width="150" height="150"/>
+        <image name="Floor.png" width="320" height="120"/>
+        <image name="UI_Best.png" width="50" height="25"/>
+        <image name="UI_Taptostart.png" width="320" height="140"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
