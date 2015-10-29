@@ -17,6 +17,7 @@
 #import "Object.h"
 #import "Settings.h"
 
+@import GoogleMobileAds;
 
 @interface GameView ()
 @end
@@ -39,6 +40,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //ADMOB INTEGRATION!!!
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    
+    self.iPadBannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.iPadBannerView.rootViewController = self;
+    [self.iPadBannerView loadRequest:[GADRequest request]];
     
     //-- Load the settings.plist file
     self.Settings = [[Settings alloc] init];

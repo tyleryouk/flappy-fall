@@ -102,6 +102,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="kOh-1q-Xz8" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -117,11 +122,12 @@
                         <outlet property="RateButton" destination="Qop-B4-vcO" id="Qk2-0F-GG5"/>
                         <outlet property="ScoreLabel" destination="kVt-LP-WgZ" id="zyg-kF-E17"/>
                         <outlet property="TwitterButton" destination="Tp6-71-e2x" id="dJp-A1-Cqd"/>
+                        <outlet property="bannerView" destination="kOh-1q-Xz8" id="x40-yf-eTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-259" y="-11"/>
+            <point key="canvasLocation" x="-664" y="-33"/>
         </scene>
     </scenes>
     <resources>

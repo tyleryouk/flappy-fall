@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		367B870A1BE05936003C9447 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367B87091BE05936003C9447 /* GameKit.framework */; };
+		36D5D9731BE2DF540091735B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D9721BE2DF540091735B /* CoreMedia.framework */; };
+		36D5D9761BE2DF640091735B /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D9741BE2DF640091735B /* EventKit.framework */; };
+		36D5D9771BE2DF640091735B /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D9751BE2DF640091735B /* EventKitUI.framework */; };
+		36D5D9791BE2DF6B0091735B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D9781BE2DF6B0091735B /* MessageUI.framework */; };
+		36D5D97B1BE2DF730091735B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D97A1BE2DF730091735B /* StoreKit.framework */; };
+		36D5D98E1BE2E2FD0091735B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5D98D1BE2E2FD0091735B /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		D70C396E1912395B00264D66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70C396D1912395B00264D66 /* AudioToolbox.framework */; };
 		D70C3988191251A100264D66 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70C3987191251A100264D66 /* AVFoundation.framework */; };
 		D70C3A40191491FA00264D66 /* Main_iPhone_3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70C3A3E191491FA00264D66 /* Main_iPhone_3.5.storyboard */; };
@@ -119,6 +125,12 @@
 
 /* Begin PBXFileReference section */
 		367B87091BE05936003C9447 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		36D5D9721BE2DF540091735B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		36D5D9741BE2DF640091735B /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		36D5D9751BE2DF640091735B /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		36D5D9781BE2DF6B0091735B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		36D5D97A1BE2DF730091735B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		36D5D98D1BE2E2FD0091735B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.5.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		D70C396D1912395B00264D66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D70C3987191251A100264D66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D70C3A3F191491FA00264D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone_3.5.storyboard; sourceTree = "<group>"; };
@@ -240,22 +252,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E4E0FD197652EB0085CAF3 /* SystemConfiguration.framework in Frameworks */,
+				36D5D97B1BE2DF730091735B /* StoreKit.framework in Frameworks */,
+				36D5D9791BE2DF6B0091735B /* MessageUI.framework in Frameworks */,
+				36D5D9761BE2DF640091735B /* EventKit.framework in Frameworks */,
+				36D5D9771BE2DF640091735B /* EventKitUI.framework in Frameworks */,
+				D78AB8B71925E0F3001B41FE /* CoreTelephony.framework in Frameworks */,
+				36D5D9731BE2DF540091735B /* CoreMedia.framework in Frameworks */,
+				D749CDC419049D500016B5F4 /* CoreGraphics.framework in Frameworks */,
+				D70C3988191251A100264D66 /* AVFoundation.framework in Frameworks */,
+				D70C396E1912395B00264D66 /* AudioToolbox.framework in Frameworks */,
+				D78AB8B51925E0EB001B41FE /* AdSupport.framework in Frameworks */,
 				D7E4E1091976530F0085CAF3 /* CFNetwork.framework in Frameworks */,
 				D7E4E1071976530B0085CAF3 /* CoreLocation.framework in Frameworks */,
 				D7E4E105197653040085CAF3 /* libz.dylib in Frameworks */,
 				D7E4E103197652FC0085CAF3 /* MobileCoreServices.framework in Frameworks */,
 				D7E4E101197652F60085CAF3 /* QuartzCore.framework in Frameworks */,
 				D7E4E0FF197652F10085CAF3 /* Security.framework in Frameworks */,
-				D7E4E0FD197652EB0085CAF3 /* SystemConfiguration.framework in Frameworks */,
 				D7E4E0F9197652DE0085CAF3 /* Social.framework in Frameworks */,
+				36D5D98E1BE2E2FD0091735B /* GoogleMobileAds.framework in Frameworks */,
 				D7E4E0F7197652D70085CAF3 /* Accounts.framework in Frameworks */,
 				367B870A1BE05936003C9447 /* GameKit.framework in Frameworks */,
 				D78AB8B91925E0FE001B41FE /* MediaPlayer.framework in Frameworks */,
-				D749CDC419049D500016B5F4 /* CoreGraphics.framework in Frameworks */,
-				D78AB8B71925E0F3001B41FE /* CoreTelephony.framework in Frameworks */,
-				D78AB8B51925E0EB001B41FE /* AdSupport.framework in Frameworks */,
-				D70C3988191251A100264D66 /* AVFoundation.framework in Frameworks */,
-				D70C396E1912395B00264D66 /* AudioToolbox.framework in Frameworks */,
 				D749CDC619049D500016B5F4 /* UIKit.framework in Frameworks */,
 				D749CDC219049D500016B5F4 /* Foundation.framework in Frameworks */,
 			);
@@ -285,6 +303,12 @@
 		D749CDC019049D500016B5F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36D5D98D1BE2E2FD0091735B /* GoogleMobileAds.framework */,
+				36D5D97A1BE2DF730091735B /* StoreKit.framework */,
+				36D5D9781BE2DF6B0091735B /* MessageUI.framework */,
+				36D5D9741BE2DF640091735B /* EventKit.framework */,
+				36D5D9751BE2DF640091735B /* EventKitUI.framework */,
+				36D5D9721BE2DF540091735B /* CoreMedia.framework */,
 				367B87091BE05936003C9447 /* GameKit.framework */,
 				D7E4E1081976530F0085CAF3 /* CFNetwork.framework */,
 				D7E4E1061976530B0085CAF3 /* CoreLocation.framework */,
@@ -890,7 +914,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Youk (REFGKC7YRH)";
-				FRAMEWORK_SEARCH_PATHS = "./**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"./**",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cute Rush/Cute Rush-Prefix.pch";
 				INFOPLIST_FILE = "Cute Rush/Cute Rush-Info.plist";
@@ -912,7 +939,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Youk (4H2CPZLR9S)";
-				FRAMEWORK_SEARCH_PATHS = "./**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"./**",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cute Rush/Cute Rush-Prefix.pch";
 				INFOPLIST_FILE = "Cute Rush/Cute Rush-Info.plist";
