@@ -43,11 +43,11 @@
     
     //ADMOB INTEGRATION!!!
     NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
-    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.adUnitID = @"ca-app-pub-3608073587678030/1807463907";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
     
-    self.iPadBannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.iPadBannerView.adUnitID = @"ca-app-pub-3608073587678030/1807463907";
     self.iPadBannerView.rootViewController = self;
     [self.iPadBannerView loadRequest:[GADRequest request]];
     
