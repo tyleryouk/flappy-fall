@@ -46,6 +46,9 @@
     UIViewController *vc;
     SLComposeViewController *mySLComposerSheet;
     
+    //Admob var
+    int admob;
+    
 }
 
 

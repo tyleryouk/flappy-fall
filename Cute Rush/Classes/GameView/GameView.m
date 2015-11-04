@@ -473,11 +473,6 @@ Type 1: Normal Object
         self.view.userInteractionEnabled = true;
      }];
     
-    //ADMOB SHIT!!__!#@$)@#($!@#$)_~~~~
-    if ([self.interstitial isReady]) {
-        [self.interstitial presentFromRootViewController:self];
-    }
-    
     // -- (3)
     
     // Reset Varibles
@@ -508,6 +503,16 @@ Type 1: Normal Object
         
         // Play Sound
         [self PlaySound:@"Die"];
+    }
+    
+    //ADMOB !__!#@$)@#($!@#$)_~~~~
+    
+    
+    admob++;
+    if(admob  % 2 == 0){
+        if ([self.interstitial isReady]) {
+            [self.interstitial presentFromRootViewController:self];
+        }
     }
     
 }
