@@ -22,7 +22,6 @@
 @interface GameView ()
 @end
 
-
 @implementation GameView
 
 //-- Synthesize Game Properties
@@ -41,7 +40,7 @@
 {
     [super viewDidLoad];
     
-    //ADMOB INTEGRATION!!!
+    //ADMOB INTEGRATION!!!  FOR BANNER
     NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
     self.bannerView.adUnitID = @"ca-app-pub-3608073587678030/1807463907";
     self.bannerView.rootViewController = self;
@@ -50,6 +49,15 @@
     self.iPadBannerView.adUnitID = @"ca-app-pub-3608073587678030/1807463907";
     self.iPadBannerView.rootViewController = self;
     [self.iPadBannerView loadRequest:[GADRequest request]];
+    
+    //ADMOB INTEGRATION!!! FOR INTERSTITIAL ADS
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-3608073587678030/1845673103"];
+    
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
+    
     
     //-- Load the settings.plist file
     self.Settings = [[Settings alloc] init];
@@ -464,6 +472,11 @@ Type 1: Normal Object
         Phase = 3;
         self.view.userInteractionEnabled = true;
      }];
+    
+    //ADMOB SHIT!!__!#@$)@#($!@#$)_~~~~
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
+    }
     
     // -- (3)
     

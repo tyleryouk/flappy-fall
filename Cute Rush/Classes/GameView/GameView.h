@@ -75,5 +75,6 @@
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 @property (weak, nonatomic) IBOutlet GADBannerView *iPadBannerView;
+@property(nonatomic, strong) GADInterstitial *interstitial;
 
 @end
